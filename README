@@ -1,0 +1,15 @@
+Instalar MySQL Connector
+dotnet add package MySqlConnector
+
+Crear la base de datos "tienda"
+
+CREATE DATABASE tienda;
+
+Crear la tabla
+
+CREATE TABLE producto (
+    id_producto INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion VARCHAR(500) NOT NULL,
+    precio DECIMAL(10, 2) NOT NULL
+);
